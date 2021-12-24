@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px;
+  border: 1px solid;
+  align-items: center;
+  background: #3046c125;
+}
+.navbar .logoSect {
+  font-size: 1.2rem;
+  color: #3045c1;
+  font-weight: 600;
+}
+#navUl {
+  display: flex;
+  gap: 11px;
+}
+#navUl li {
+  list-style: none;
+}
+#navUl li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 5px;
+  padding-bottom: 3px;
+  /* border-bottom: 2px solid; */
+  font-weight: 400;
+  color: #1d1d1f;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#navUl li a.active,
+#navUl li a:hover {
+  border-bottom: 2px solid;
+}
+.searchNav {
+  color: #5361c7;
+  padding: 2px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  background: transparent;
+  font-size: 1.2rem;
+  width: 60%;
+  
+}
+.right {
+  display: flex;
+  justify-content: space-between;
+}
+.contMain {
+  display: flex;
+  justify-content: center;
+}
+#notes {
+  display: flex;
+  justify-content: center;
+  padding: 9px;
+  border-bottom: 1px solid;
+}
+#notesH1 {
+  font-size: 2.2rem;
+  color: #3045c1;
+}
+.notesContainer {
+  border: 2px solid gray;
+  padding: 12px;
+  margin: 12px;
+  border-radius: 12px;
+}
+.Noteinputs {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.NoteInp {
+  padding: 7px;
+  outline: none;
+  border: 2px solid grey;
+  /* color: blueviolet; */
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 8px;
+  color: #5f53c7;
+  font-weight: 800;
+}
+.headerBtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 7px;
+  color: rgb(255, 255, 255);
+  outline: none;
+  background: linear-gradient(to bottom left, #6600ff, #ff00ff);
+  background: linear-gradient(to top right, #6600ff 25%, #cc33ff 97%);
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 4px;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.btn:hover {
+  color: rgba(255, 255, 255, 0.795);
+}
+.cardContainer {
+  display: flex;
+  border: 2px solid;
+  height: 100%;
+  padding: 11px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+.cardMain {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #808080;
+  /* height: 250px; */
+  width: 250px;
+  border-radius: 9px;
+  padding: 6px;
+  margin: 5px;
+  transition: 0.3s;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card .title {
+  padding: 2px;
+}
+.card .desc {
+  margin: 3px;
+  border-bottom: 1px solid gray;
+  padding: 3px;
+}
+.cardBtns {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+.doneBtn {
+  text-shadow: 0 0 12px rebeccapurple;
+}
+.EditBtn {
+  text-shadow: 0 0 12px rebeccapurple;
+}
+.show {
+  right: 0;
+}
+
+.hide {
+  right: -100%;
+}
+.db 
+{
+    display: none;
+}
+.dn
+{
+    display: none; 
+}
+@media screen and (max-width: 700px) {
+  .navUl {
+    position: fixed;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    background: rgba(109, 110, 172, 0.37);
+    height: 100vh;
+    padding: 13px;
+    width: 35%;
+    transition: 0.4s;
+  }
+  .show {
+    right: 0;
+  }
+  .Noteinputs {
+    width: 70%;
+  }
+  .db 
+  {
+      display: block;
+  }
+  .dn
+  {
+      display: none; 
+  }
+}
+@media screen and (max-width: 460px) {
+  .searchNav {
+    position: absolute;
+    right: 0;
+    font-size: 1.2rem;
+    width: 40%;
+    top: 129px;
+    z-index: 2;
+    visibility: hidden;
+  }
+  .vis {
+    visibility: visible;
+  }
+  #navUl {
+    top: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+    .cards
+    {
+        justify-content: center;
+    }
+    .card
+    {
+        width: 230px;
+    }
+    .cardContainer{
+        justify-content: center;
+    }
+}

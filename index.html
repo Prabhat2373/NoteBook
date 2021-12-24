@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteBook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="logoSect">DevDiary & Tasks</div>
+            <ul id="navUl" class="navUl ">
+                <li><a href="#" class="active">Notes</a></li>
+                <li><a href="#">Tasks</a></li>
+            </ul>
+            <div class="right">
+                <input type="search" class="searchNav " name="searchNav" id="searchNav" placeholder="Search Here">
+                <img src="https://img.icons8.com/external-tal-revivo-tritone-tal-revivo/32/000000/external-mobile-application-hamburger-menu-setting-interface-basic-tritone-tal-revivo.png" class="burgerOpen burger db" id="openburger"/>
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/delete-sign.png" class="closeburger burger dn" id="closeburger"/>
+                </div>
+        </nav>
+    </header>
+    <section class="Home" id="notes">
+        <div class="noteMain">
+            <div class="notehead">
+                <h1 id="notesH1">Notes</h1>
+            </div>
+
+        </div>
+    </section>
+    <section class="notesContainer">
+        <div class="contMain">
+           <div class="Noteinputs">
+            <input type="text" class="NoteInp" id="NoteInp" placeholder="Note">
+            <input type="text" class="NoteInp" id="NoteDesc" placeholder="Description">
+            <div class="headerBtns">
+                <input type="button" value="Add" class="btn btn-add" id="AddBtn">
+                <input type="button" value="Clear All" class="btn btn-add" id="cleanBtn">
+            </div>
+           </div>
+        </div>
+    </section>
+    <section class="cardContainer">
+        <div class="cardMain">
+            <div class="cards" id="cards">
+
+           
+            <!-- <div class="card">
+                <h1 class="title" id="title">This is title</h1>
+                <p class="desc" id="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, nemo! Expedita cum architecto quos voluptas</p>
+               <div class="cardBtns">
+                <input type="button" value="Done!" class="btn doneBtn" id="doneBtn">
+                <input type="button" value="Edit" class="btn EditBtn" id="EditBtn">
+               </div>
+            </div> -->
+            
+        </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+  
+</body>
+</html>
